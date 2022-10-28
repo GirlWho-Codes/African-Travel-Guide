@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ff-main);
+  margin: 0;
+  padding: 0;
+  background-color: var(--clr-background-light);
+  scroll-behavior: smooth;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75em 0;
+    grid-gap: 0.5em;
+    background-color: skyblue;
+    color: #FFFFFF;
+   
+}
+
+.nav-title{
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: 0.005em;
+}
+
+.nav-img{
+    height: 1em;
+    width: 1em;
+    /* position: absolute;
+    width: 185px;
+    height: 165px;
+    left: 385px;
+    top: -9px; */
+
+    /* background: #FFFFFF; */
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+/* .card-list{
+    background-color: green;
+} */
+
+.card {
+  color: var(--clr-text-main);
+  display: flex;
+  flex-direction: row;
+  padding: 2em 0;
+}
+
+.card-list{
+    display: flex;
+    flex-direction: column;
+    padding: 4em 3em;
+}
+
+.card-img{
+   height: 100%;
+  /* width: 20vw; */
+    width: 20em;
+    padding: 16 9;
+    object-fit: cover;
+    border-radius: 0.3em;
+
+    transform: scale(1);
+    transition: all 650ms ease-in-out;
+}
+
+.card-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
+    0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+  /* filter: brightness(80%); */
+}
+
+.card-text{
+    max-width: 50rem;
+  margin-top: 2em;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+}
+.card-infos {
+  margin-left: 1em;
+  padding: 0.5em;
+}
+
+.card-location-icon {
+  color: var(--clr-accent);
+}
+
+
+.card-title{
+    font-size: 2rem;
+    margin: 0.25em 0;
+    font-weight: 700;
+}
+
+.card-fill{
+    display: inline-block;
+    width: 7px;
+    height: 9.55px;
+    left: 170px;
+    top: 135px;
+    
+    }
+
+.card-date{
+    font-weight: 700;
+}
+
+.card-location{
+    display: inline-block;
+    font-size: 0.75rem;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    margin: 0 1em 0 0.25em;
+    color: var(--clr-text-main);
+
+}
+
+.card-map{
+    color: var(--clr-text-light);
+    font-size: 0.75rem;
+}
+
+.cards-list > .card + .card {
+  padding: 2em 0;
+  border-top: 1px solid var(--clr-text-light);
+}
+
+.cards-list .card:first-child {
+  padding-top: 0;
+}
+
+.cards-list .card:last-child {
+  padding-bottom: 0;
+}
+
